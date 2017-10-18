@@ -1,0 +1,74 @@
+<!--pages/hot/hot.wxml-->
+<view class='container'>
+  <view class="align">
+    <view class='topInput'>
+      <view class='have'>
+        <icon type="search" size='14'></icon>
+        <input placeholder='搜索话题，问题或人'></input>
+        <view class="bottom">
+        <image src='/image/1.png'></image>
+        <text>提问</text>
+        </view>        
+      </view>
+    </view>
+    <view class='tab'>
+      <view class='move' bindtap='move'>动态</view>      
+      <view class='hot' bindtap='hot'>热门</view>      
+      <view class='find' bindtap='find'>发现</view>      
+    </view>
+      <view class='bot'>
+    <view>
+      <image src='/image/20.png'></image>
+      <view>首页</view>
+    </view>
+    <view>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+  </view>
+  <view class='content'>
+      <view class='first'>
+        <view class='head'>
+          <image src='/image/6.jpg'></image>
+          <text>{{firstContent.itemFrom}}</text>
+        </view>        
+        <view>{{firstContent.ques}}</view>
+        <view>{{firstContent.ans}}</view>
+      </view>
+      <view class='second'>
+        <view class='top'>
+          <view>小学生用大数据研究苏轼</view>
+          <view>5年间完成研究报告23份</view>
+          <image src='/image/7.jpg'></image>
+        </view>
+        <view class='line'><view></view></view>
+        <view class='bottom'>
+          <view>窦唯发布新歌《重返魔域》</view>
+          <view>作曲/作词/演唱制作人：窦唯</view>
+          <image src='/image/8.jpg'></image>          
+        </view>     
+      </view>
+    <view class='story' wx:for="{{story}}" wx:key="{{index}}">  
+      <view class='head'>
+          <image src="/image/6.jpg"></image>
+          <text>{{item.itemFrom}}</text>
+        </view>
+        <view>{{item.ques}}</view>
+        <view>{{item.ans}}</view>
+    </view>
+    <!-- <template is="wxParse" data="{{wxParseData:insertData.nodes}}" /> -->
+  </view>
+</view>

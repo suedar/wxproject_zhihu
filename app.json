@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/find/find"
+    ],
+  "window": {
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "知乎",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  }
+}

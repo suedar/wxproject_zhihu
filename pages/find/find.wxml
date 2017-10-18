@@ -1,0 +1,92 @@
+<!--pages/find/find.wxml-->
+<view class='container'>
+  <view class="align">
+    <view class='topInput'>
+      <view class='have'>
+        <icon type="search" size='14'></icon>
+        <input placeholder='搜索话题，问题或人'></input>
+        <view class="bottom">
+        <image src='/image/1.png'></image>
+        <text>提问</text>
+        </view>        
+      </view>
+    </view>
+    <view class='tab'>
+      <view class='move' bindtap='move'>动态</view>      
+      <view class='hot' bindtap='hot'>热门</view>      
+      <view class='find' bindtap='find'>发现</view>      
+    </view>
+      <view class='bot'>
+    <view>
+      <image src='/image/20.png'></image>
+      <view>首页</view>
+    </view>
+    <view>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+  </view>
+  <view class='content'>
+    <view class='ad'>
+      <image src='/image/7.jpg'></image>
+      <image src='/image/8.jpg'></image>
+      <text class='word'>广告</text>
+    </view>
+    <view class='icon'>
+      <view>
+        <view class='img'></view>
+        <view class='word'>回答</view>
+      </view>
+      <view>
+        <view class='img'></view>
+        <view class='word'>视频</view>
+      </view>
+      <view>
+        <view  class='img'></view>
+        <view class='word'>专栏</view>
+      </view>
+      <view>
+        <view class='img'></view>
+        <view class='word'>收藏夹</view>
+      </view>
+      <view>
+        <view class='img'></view>
+        <view class='word'>圆桌</view>
+      </view>
+    </view>
+    
+     <view class='story' wx:for="{{story}}" wx:key="{{index}}"> 
+      <view class='top'>
+          <view><image src='/image/6.jpg'></image></view>
+          <view class='mid'>
+            <view class='head'>
+              <text>{{item.about}}</text>
+              <text>{{item.itemAbout}}</text>              
+            </view>
+            <view class='ex'>{{item.ex}}</view>
+              <view> 
+          </view>            
+        </view>
+        <button class='btn'>+ 关注</button>
+      </view>                               
+        <view class='line'></view>
+        <view>
+        <view class='que'>{{item.ques}}</view>
+        <view class='ans'>{{item.ans}}</view>
+        </view>
+    </view>
+</view>
+</view>

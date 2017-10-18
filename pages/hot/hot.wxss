@@ -1,0 +1,270 @@
+/* pages/hot/hot.wxss */
+image{
+  width: 10rpx;
+  height: 10rpx;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .align{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 2;
+}
+.topInput{
+  background-color: #1E90FF;
+  height: 8vh;
+  width: 100%;
+  line-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.topInput .have icon{
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+}
+.topInput .have{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #fff;
+  width: 95%;
+  height: 6vh;
+  border-radius: 5px;
+  line-height: 6vh;
+  margin: 1vh auto;
+  position: relative;
+  text-align: center;
+}
+.topInput .have input{
+  /* display: inline-block;       */
+  height: 1vh;
+  line-height: 1vh;
+  width: 60%;
+  font-size: 30rpx;
+  padding: 25rpx 0 25rpx 80rpx;
+  text-align: left;     
+}
+.topInput .have .bottom{
+  width: 25%;
+  height: 3vh;
+  line-height: 3vh;
+  border-left: 1px solid #f2f2f2;  
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.topInput .have image{
+  position: absolute;
+  top: -1rpx;
+  left: 25rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.topInput .have text{
+  height: 3vh; 
+  color: #808080;
+  font-size: 30rpx;
+  text-align: center;
+  padding-left: 90rpx;
+}
+.container .tab{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  box-shadow: 0px .1px .1px .1px #0000CD inset;     
+  /* flex-direction: column; */
+}
+.container .tab view{
+  display: inline-block;
+  text-align: center;
+  width: 35%;
+  height: 5vh;
+  line-height: 4vh;
+  background-color: #1E90FF;
+  color: rgba(255, 255, 255, .6);
+  font-size: 30rpx;
+  /* box-shadow: 0 0 2px .1px #000; */
+}
+.container .tab view:nth-of-type(2){
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 3px solid white;
+}
+.container .content{
+  background-color: #f2f2f2; 
+  width: 100%;
+  padding-top: 13vh;
+}
+.container .content .first,.container .content .story{
+  margin-top: 2vh;
+  height: 23vh;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 .6px .6px .6px #ccc;  
+}
+.container .content .first .head,.container .content .second .sec-head,.container .content .story .head{
+  height: 5vh;
+  width: 100%;
+  line-height: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 5rpx;
+}
+.container .content .first .head image:first-of-type,.container .content .second .sec-head image:first-of-type,.container .content .story .head image:first-of-type{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-left: 20rpx;
+  margin-top: 1vh;
+}
+.container .content .first .head text:first-of-type,.container .content .second .sec-head text:first-of-type,.container .content .story .head text:first-of-type{
+  position: absolute;
+  top: 10rpx;
+  left: 80rpx;
+  color: #808080;
+  font-size: 25rpx;
+}
+
+.container .content .first view:nth-of-type(2),.container .content .story view:nth-of-type(2){
+  height: 4vh;
+  text-align: initial;
+  font-size: 33rpx;
+  font-weight: 900;
+  padding-left: 18rpx;
+  padding-top: 10rpx;
+  width: 95%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container .content .first view:nth-of-type(3),.container .content .story view:nth-of-type(3){
+  width: 95%;
+  height: 10vh;
+  /* line-height: 10vh; */
+  font-size: 30rpx;
+  overflow: hidden; 
+  text-align: left;
+  text-overflow: ellipsis;
+  margin: 10rpx 0rpx;
+  margin-left: 18.5rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.container .content .story view:nth-of-type(3){
+  margin-left: 18.5rpx;
+}
+.container .content .second{
+  height: 30vh;
+  width: 100%;
+  box-shadow: 0 .6px .6px .6px #ccc;  
+  background-color: #fff;
+  margin-top: 2vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative; 
+}
+.container .content .second .top,.container .content .second .bottom{
+   position: relative; 
+  padding: 30rpx 0 30rpx 15rpx;
+  width: 100%;
+}
+.container .content .second .line{
+  /* position: absolute; */
+  border-top: .1px solid #ccc; 
+  width: 90%;
+  margin: 0 auto;
+}
+.container .content .second .top view:first-of-type,.container .content .second .bottom view:first-of-type{
+  height: 4vh;
+  text-align: initial;
+  font-size: 33rpx;
+  font-weight: 600;
+  padding-left: 18rpx;
+  padding-top: 10rpx;
+  width: 60%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container .content .second .top view:nth-of-type(2),.container .content .second .bottom view:nth-of-type(2){
+  width: 60%;
+  height: 4vh;
+  /* line-height: 10vh; */
+  font-size: 30rpx;
+  overflow: hidden; 
+  text-align: left;
+  text-overflow: ellipsis;
+  margin: 10rpx 0rpx;
+  margin-left: 18.5rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.container .content .second .top image,.container .content .second .bottom image{
+  position: absolute;
+  width: 263.2rpx;
+  height: 148rpx;
+  top: 15rpx;
+  right: 45rpx;
+  border-radius: 5px;
+}
+.container .bot{
+  height: 7.5vh;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  z-index: 2;
+  box-shadow: .1px -.1px 5px .1px #ccc; 
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-content: center;
+  /* border-top: .1px solid #ccc;    */
+}
+.container .bot view{
+  padding-top: 5rpx;
+  width: 20%;
+  height: 7.5vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .bot view image{
+  position: absolute;
+  top: 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .bot view view{
+  padding-top: 50rpx;
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

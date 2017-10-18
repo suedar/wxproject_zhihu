@@ -1,0 +1,125 @@
+<!--pages/index/index.wxml-->
+<!-- <import src="../../wxParse/wxParse.wxml" /> -->
+<view id="a" class='container'>
+  <view class="align">
+    <view class='topInput'>
+      <view class='have'>
+        <icon type="search" size='14'></icon>
+        <input placeholder='搜索话题，问题或人'></input>
+        <view class="bottom">
+        <image src='/image/1.png'></image>
+        <text>提问</text>
+        </view>        
+      </view>
+    </view>
+    <view class='tab'>
+      <view class='move' bindtap='move'>动态</view>      
+      <view class='hot' bindtap='hot'>热门</view>      
+      <view class='find' bindtap='find'>发现</view>      
+    </view>
+  </view>
+  <view class='content'>
+      <view class='first'>
+        <view class='head'>
+          <image src='/image/6.jpg'></image>
+          <text>{{firstContent.itemFrom}}</text>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+        </view>        
+        <view>{{firstContent.ques}}</view>
+        <view>{{firstContent.ans}}</view>
+        <view>{{firstContent.agreeNum}} · {{firstContent.command}} · {{firstContent.then}}</view>
+      </view>
+      <view class='second'>
+        <view class='sec-head'>
+            <image src="/image/2.png"></image>
+            <text>知乎Live</text>
+            <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII="></image>
+        </view>
+        <view style=''>
+          <scroll-view scroll-x="true" bindscroll="scroll" style='width:100%'>
+          <view class='live'>
+          <view class='liveItem'  wx:for="{{liveContent}}" wx:key="{{index}}">
+            <view class='flex'>
+              <image src="{{item.src}}"></image>
+              <view class='pic'><image src='/image/4.png'></image></view>
+              <view>{{item.text}}</view>
+              <view>{{item.name}}</view>
+              <view>{{item.guess}}</view>
+              <view>点击查看</view> 
+            </view>
+          </view> 
+          <view class='more'>
+          <view class='flex'>          
+            <image class='img' src='/image/3.png'></image>
+            <view class='word'>查看全部Live</view>
+          </view>          
+          </view>
+          </view>
+        </scroll-view>
+        </view>
+    </view>
+      <view class='story'>      
+        <view class='head'>
+          <image src="/image/6.jpg"></image>
+          <text>{{storyContent.itemFrom}}</text>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+        </view>
+        <view>{{storyContent.ques}}</view>
+        <view>{{storyContent.ans}}</view>
+        <view>{{storyContent.agreeNum}} · {{storyContent.command}} · {{storyContent.then}}</view>
+    </view>
+        <view class='article'>
+        <view class='head'>
+          <image src="/image/6.jpg"></image>
+          <text>{{storyContent1.itemFrom}}</text>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+        </view>
+        <view><image src='/image/5.png'></image></view>
+        <view>{{storyContent1.ques}}</view>
+        <view>{{storyContent1.ans}}</view>
+        <view>{{storyContent1.agreeNum}} · {{storyContent1.command}} · {{storyContent1.then}}</view>
+    </view>  
+      <view class='mark'>
+      <view class='head'>
+          <image src="/image/6.jpg"></image>
+          <text>{{storyContent2.itemFrom}}</text>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+        </view>
+      <view>{{storyContent2.ques}}</view>
+      <view>{{storyContent2.agreeNum}} · {{storyContent2.command}} · {{storyContent2.then}}</view>
+    </view>     
+    <view class='story' wx:for="{{story}}" wx:key="{{index}}">  
+      <view class='head'>
+          <image src="/image/6.jpg"></image>
+          <text>{{item.itemFrom}}</text>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+        </view>
+        <view>{{item.ques}}</view>
+        <view>{{item.ans}}</view>
+        <view>{{item.agreeNum}} · {{item.command}} · {{item.then}}</view>
+    </view>
+    <!-- <template is="wxParse" data="{{wxParseData:insertData.nodes}}" /> -->
+  </view>
+  <view class='bot'>
+    <view>
+      <image src='/image/20.png'></image>
+      <view>首页</view>
+    </view>
+    <view>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+</view>
