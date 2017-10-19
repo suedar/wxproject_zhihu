@@ -25,6 +25,12 @@
 					"name": "find",
 					"pathName": "pages/find/find",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "thought",
+					"pathName": "pages/thought/thought",
+					"query": ""
 				}
 			]
 		},

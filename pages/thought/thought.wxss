@@ -1,0 +1,110 @@
+/* pages/thought/thought.wxss */
+image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.container{
+  background-color: #f2f2f2;
+}
+.container .top{
+  width: 100%;
+  display: flex;
+  top: 0px;
+  box-shadow: 0px .1px .1px .1px #6495ED inset;           
+  height: 6vh;
+  background-color: #1E90FF;
+  padding-bottom: 20rpx;
+  
+}
+.container .top>view{
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  line-height: 6vh;
+}
+.container .top>view .fro{
+  height: 6vh;
+  line-height: 6vh;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.container .top>view image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+} 
+.container .top>view view{
+  margin-left: 45rpx;
+  padding-top: 5rpx;
+  color: #fff;
+  font-size: 38rpx;
+  /* padding: 2rpx 0; */
+  height: 6vh;
+  line-height: 6vh;
+}
+.container .top .font{
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.container .content .topCon{
+  width: 100%;
+  height: 8vh;
+  margin-top: 2vh;
+  border-top: .4px solid #ccc;
+  border-bottom: .4px solid #ccc;  
+  background-color: #fff;
+  box-shadow: 0 .6px .6px .6px #ccc; 
+  margin-bottom: 2vh; 
+}
+.container .content .topCon .part{
+  width: 90%;
+  margin: 0 auto;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .content .topCon .leftPart{
+  display: flex;
+  align-items: center;
+}
+.container .content .topCon .leftPart image{
+  width: 94.8rpx;
+  height: 33.6rpx;
+}
+.container .content .topCon .leftPart view{
+  height: 6vh;
+  font-size: 32rpx;
+  font-weight: 700;
+  line-height: 6vh;
+  margin-left: 20rpx;
+  padding-left: 20rpx;
+  border-left: .4px solid #ccc;
+}
+.container .content .topCon .rightIco{
+  color: #ccc;
+  font-weight: 700;
+}
+.container .content .story{
+  width: 100%;
+  height: 12vh;
+  /* margin-top: 2vh; */
+  border-top: .4px solid #ccc;
+  background-color: #fff;
+  display: flex;
+}
+.container .content .story .left{
+  width: 13%;
+  padding-left: 40rpx;
+  padding-top: 20rpx;
+}
+.container .content .story .left image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+
+}

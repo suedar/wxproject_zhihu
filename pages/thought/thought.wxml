@@ -1,0 +1,50 @@
+<!--pages/thought/thought.wxml-->
+<view class='container'>
+  <view class='top'>
+    <view>
+      <view class='fro'>
+      <image src='/image/6.jpg'></image>
+        <view>想法</view>
+      </view>
+      <view class='font'>推荐频道</view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='topCon'>
+      <view class='part'>
+      <view class='leftPart'>
+        <image src='/image/40.png'></image>
+        <view>上哪去喝一杯咖啡呢</view>
+      </view>      
+       <view class='rightIco'>></view> 
+      </view>
+    </view>
+    <view class='story' wx:for="{{story}}" wx:key="{{item}}">
+      <view class='left'>
+        <image src='/image/6.jpg'></image>    
+      </view>
+      <view class='right'>
+        <view class='head'>
+          <view>{{item.name}}</view>
+          <view>{{item.time}}</view>
+        <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+      </view>
+      <view>{{item.con}}</view>
+      <view>
+        <view>
+        <image src='/image/31.png'></image>
+        {{item.trans}}
+        </view>
+        <view>
+        <image src='/image/32.png'></image>
+        {{item.bul}}
+        </view>
+        <view>
+          <image src='/image/33.png'></image>
+          {{item.plus}}
+        </view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

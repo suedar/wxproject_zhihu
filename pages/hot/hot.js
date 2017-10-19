@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+  ex: 0
   },
   move: function () {
     wx.redirectTo({
@@ -16,6 +16,27 @@ Page({
   find: function () {
     wx.redirectTo({
       url: '../find/find',
+    })
+  },
+
+  thought: function () {
+    wx.redirectTo({
+      url: '../thought/thought',
+    })
+  },
+  marker: function () {
+    wx.redirectTo({
+      url: '../market/market',
+    })
+  },
+  notice: function () {
+    wx.redirectTo({
+      url: '../notice/notice',
+    })
+  },
+  more: function () {
+    wx.redirectTo({
+      url: '../more/more',
     })
   },
   /**
@@ -113,5 +134,22 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  onPageScroll: function (e) {
+    var ex = this.data.ex;
+    var that = this;
+    var y = e.scrollTop;
+    if (e.scrollTop > ex) {
+      that.setData({
+        dis: 'dis',
+        ex: e.scrollTop
+      })
+    } else if (e.scrollTop < ex) {
+      console.log(that.data.dis);
+      that.setData({
+        dis: '',
+        ex: e.scrollTop
+      })
+    }
   }
 })

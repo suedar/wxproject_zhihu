@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/hot/hot",
-    "pages/find/find"
+    "pages/find/find",
+    "pages/thought/thought",
+    "pages/market/market",
+    "pages/notice/notice",
+    "pages/more/more"
     ],
   "window": {
     "navigationBarBackgroundColor": "#1E90FF",

@@ -43,7 +43,8 @@ Page({
       agreeNum:"9",
       command:"12",
       then:"关注问题"
-    }]
+    }],
+    ex:0,
   },
   /**
    * 生命周期函数--监听页面加载
@@ -60,6 +61,26 @@ Page({
   find:function(){
     wx.redirectTo({
       url: '../find/find',
+    })
+  },
+  thought:function(){
+    wx.redirectTo({
+      url: '../thought/thought',
+    })
+  },
+  marker:function(){
+    wx.redirectTo({
+      url: '../market/market',
+    })
+  },
+  notice:function(){
+    wx.redirectTo({
+      url: '../notice/notice',
+    })
+  },
+  more:function(){
+    wx.redirectTo({
+      url: '../more/more',
     })
   },
   onLoad: function (options) {
@@ -209,32 +230,22 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
   },
-  // insertNodeTap: function (item) {
-  //   var that = this;
-  //   var insertData;
-  //   if (item.type === "common_about" || item.type === "common_au"){
-  //     insertData = '<view class="story"><view class="head"><image src="/image/6.jpg" ></image><text>'+ item.itemFrom + '</text><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image></view><view>' + item.ques + '</view><view>' + item.ans + '</view><view>' + item.agreeNum + ' · ' + item.command + ' · ' + item.then + '</view></view>';
-  //   } else if (item.type === "article_about"){
-  //     insertData = '<view class="article"><view class="head"><image src="/image/6.jpg"></image><text>' + item.itemFrom + '</text><image src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=" > "></image></view><view><image src="/image/5.png"></image></view><view>' + item.ques + '</view><view>' + item.ans + '</view><view> ' + item.agreeNum + ' · ' + item.command + ' · '+ item.then +'</view></view>';
-  //   } else {
-  //     insertData = '<view class="mark"><view class="head"><image src="/image/6.jpg"></image><text>' + item.itemFrom + '</text><image src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=" > "></image></view><view>' + item.ques + '</view><view>' + item.agreeNum + ' · ' + item.command + ' · ' + item.then + '</view></view>';
-  //   }
-  //   WxParse.wxParse('insertData', 'html', insertData, that);          
-  // },
   onPageScroll:function(e){
-    // console.log(this.data.resData);
-    // console.log(e);
-    // var y = 116;
-    // var yNum = 50
-    // var num = 2;
-    // if(e.scrollTop > yNum&& num!= 11){
-    //   var item = this.data.resData[this.data.randArray[num]];      
-    //   this.insertNodeTap(item);
-    //   num++;
-    //   y+=136;
-    //   yNum = y/2;
-    // }
+    var ex = this.data.ex;
+    var that = this;
+      var y = e.scrollTop;
+      if (e.scrollTop > ex) {
+        that.setData({
+          dis: 'dis',
+          ex: e.scrollTop
+        })
+      } else if (e.scrollTop < ex) {
+        console.log(that.data.dis);
+        that.setData({
+          dis: '',
+          ex: e.scrollTop
+        })
+      }
   }
 })

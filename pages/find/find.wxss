@@ -298,6 +298,10 @@ image{
   align-content: center;
   /* border-top: .1px solid #ccc;    */
 }
+.container .dis{
+  display: none;
+  /* transition: all 1s linear; */
+}
 .container .bot view{
   padding-top: 5rpx;
   width: 20%;
@@ -320,4 +324,6 @@ image{
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: #808080;
+
 }

@@ -16,28 +16,6 @@
       <view class='hot' bindtap='hot'>热门</view>      
       <view class='find' bindtap='find'>发现</view>      
     </view>
-      <view class='bot'>
-    <view>
-      <image src='/image/20.png'></image>
-      <view>首页</view>
-    </view>
-    <view>
-      <image src='/image/11.png'></image>
-      <view>想法</view>      
-    </view>
-    <view>
-      <image src='/image/12.png'></image>
-      <view>市场</view>      
-    </view>
-    <view>
-      <image src='/image/13.png'></image>
-      <view>通知</view>
-    </view>
-    <view>
-      <image src='/image/14.png'></image>
-      <view>更多</view>
-    </view>
-  </view>
   </view>
   <view class='content'>
       <view class='first'>
@@ -70,5 +48,27 @@
         <view>{{item.ans}}</view>
     </view>
     <!-- <template is="wxParse" data="{{wxParseData:insertData.nodes}}" /> -->
+  </view>
+    <view class='bot {{dis}}'>
+    <view>
+      <image src='/image/20.png'></image>
+      <view>首页</view>
+    </view>
+    <view bindtap='thought'>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view bindtap='market'>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view bindtap='notice'>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view bindtap='more'>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
   </view>
 </view>
