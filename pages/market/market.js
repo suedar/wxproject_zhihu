@@ -5,9 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
-  },
+    ex: 0,
 
+  },
+  thought:function () {
+    wx.redirectTo({
+      url: '../thought/thought',
+    })
+  },
+  shou:function () {
+    // console.log(222);
+    wx.redirectTo({
+      url: '../index/index',
+    })
+  },
+  notice:function () {
+    wx.redirectTo({
+      url: '../notice/notice',
+    })
+  },
+  more:function () {
+    wx.redirectTo({
+      url: '../more/more',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,5 +83,22 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  onPageScroll: function (e) {
+    var ex = this.data.ex;
+    var that = this;
+    var y = e.scrollTop;
+    if (e.scrollTop > ex) {
+      that.setData({
+        dis: 'dis',
+        ex: e.scrollTop
+      })
+    } else if (e.scrollTop < ex) {
+      console.log(that.data.dis);
+      that.setData({
+        dis: '',
+        ex: e.scrollTop
+      })
+    }
   }
 })

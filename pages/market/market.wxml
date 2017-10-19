@@ -1,2 +1,37 @@
 <!--pages/market/market.wxml-->
-<text>pages/market/market.wxml</text>
+<view class='container'>
+  <view class="align">
+    <view class='topInput'>
+      <view class='have'>
+        <icon type="search" size='14'></icon>
+        <input placeholder='搜索话题，问题或人'></input>
+      </view>
+      <view class='less'>
+        <image src='/image/42.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='content'></view>
+    <view class='bot {{dis}}'>
+    <view>
+      <image src='/image/10.png'></image>
+      <view>首页</view>
+    </view>
+    <view bindtap='thought'>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view bindtap='market'>
+      <image src='/image/22.png'></image>
+      <view>市场</view>      
+    </view>
+    <view bindtap='notice'>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view bindtap='more'>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+</view>

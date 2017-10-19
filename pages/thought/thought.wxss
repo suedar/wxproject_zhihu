@@ -91,7 +91,7 @@ image{
 }
 .container .content .story{
   width: 100%;
-  height: 12vh;
+  /* height: 20vh; */
   /* margin-top: 2vh; */
   border-top: .4px solid #ccc;
   background-color: #fff;
@@ -100,11 +100,141 @@ image{
 .container .content .story .left{
   width: 13%;
   padding-left: 40rpx;
-  padding-top: 20rpx;
+  padding-top: 30rpx;
 }
 .container .content .story .left image{
   width: 70rpx;
   height: 70rpx;
   border-radius: 50%;
-
+}
+.container .content .story .right{
+  width:  80%;
+  padding-top: 23rpx;   
+}
+.container .content .story .right .head{
+  position: relative;
+  /* padding: -5rpx; */
+}
+.container .content .story .right .head view:nth-of-type(1){
+  font-size: 33rpx;
+  font-weight: 900;
+}
+.container .content .story .right .head view:nth-of-type(2){
+  font-size: 28rpx;
+  opacity: .7;
+  padding-top: 3rpx; 
+}
+.container .content .story .right .head image{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top: 20rpx;
+  right: 36rpx;
+  opacity: .3;
+}
+.container .content .story .right .con{
+  width: 95%;
+  font-size: 30rpx;  
+  padding-top: 20rpx;
+  /* position: relative; */
+  line-height: 40rpx;
+  /* height:  40rpx; */
+  max-height: 120rpx;
+  overflow: hidden;
+}
+.container .content .story .right .wei{
+  width: 95%;
+  position: relative;
+  line-height: 40rpx;
+   /* height:  40rpx;  */
+  max-height: 135rpx;
+  overflow: hidden;
+}
+.container .content .story .right .wei::after{
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 50rpx;  
+  background: linear-gradient(to right, transparent 55%, #fff 55%);
+}
+.container .content .story .right .iconBot{
+  width: 80%;
+  display: flex;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.container .content .story .right .iconBot view{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 30rpx;
+}
+.container .content .story .right .iconBot view image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.container .bot{
+  height: 7.5vh;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  z-index: 2;
+  box-shadow: .1px -.1px 5px .1px #ccc; 
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-content: center;
+  /* border-top: .1px solid #ccc;    */
+}
+.container .dis{
+  display: none;
+  /* transition: all 1s linear; */
+}
+.container .bot view{
+  padding-top: 5rpx;
+  width: 20%;
+  height: 7.5vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .bot view image{
+  position: absolute;
+  top: 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .bot view view{
+  padding-top: 50rpx;
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #808080;
+}
+.container .pen{
+  position: fixed;
+  bottom: 120rpx;
+  right: 50rpx;
+  width: 110rpx;
+  height: 110rpx;
+  background-color: #1E90FF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px .1px .1px .1px #6495ED inset,.1px .3px 10px .2px #ccc;             
+}
+.container .pen image{
+  width: 50rpx;
+  height: 50rpx;
+   margin-left: 5rpx;
+  /* margin-top: 5rpx;    */
 }

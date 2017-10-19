@@ -27,16 +27,18 @@
         <view class='head'>
           <view>{{item.name}}</view>
           <view>{{item.time}}</view>
-        <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAj0lEQVRIS+2U0QmAMAwFrxO4gk7kCm7gCOoGjuBouoEjSMCKpBRCC/1KP8NrrlxDAo1OaMTBQcWmXZ2r+wzEYdiB8a0ewJZxVJwTkFyeVWMBrapWlRPQDXSq6QkMqlaVy4EuoDeAzDkBiaLFoK4qF4dBmky/YdD/E99RnPMV5CsoWUHFSqwXfeqsppJcM3UPv1Yi2rNsJ3UAAAAASUVORK5CYII=">"></image>
       </view>
-      <view>{{item.con}}</view>
-      <view>
+      <view class='{{item.wei}}'>
+        <view class='con'>{{item.con}}</view>
+      </view>
+      <view class='iconBot'>
         <view>
-        <image src='/image/31.png'></image>
+        <image src='/image/32.png'></image>
         {{item.trans}}
         </view>
         <view>
-        <image src='/image/32.png'></image>
+        <image src='/image/31.png'></image>
         {{item.bul}}
         </view>
         <view>
@@ -46,5 +48,31 @@
       </view>
       </view>
     </view>
+    
+  </view>
+  <view class='bot {{dis}}'>
+    <view bindtap='shou'>
+      <image src='/image/10.png'></image>
+      <view>首页</view>
+    </view>
+    <view>
+      <image src='/image/21.png'></image>
+      <view>想法</view>      
+    </view>
+    <view bindtap='market'>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view bindtap='notice'>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view bindtap='more'>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+  <view class='pen'>
+    <image src='/image/41.png'></image>
   </view>
 </view>

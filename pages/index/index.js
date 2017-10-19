@@ -68,7 +68,8 @@ Page({
       url: '../thought/thought',
     })
   },
-  marker:function(){
+  market:function(){
+    console.log(222);
     wx.redirectTo({
       url: '../market/market',
     })

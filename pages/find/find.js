@@ -25,7 +25,7 @@ Page({
       url: '../thought/thought',
     })
   },
-  marker: function () {
+  market: function () {
     wx.redirectTo({
       url: '../market/market',
     })
