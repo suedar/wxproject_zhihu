@@ -1,6 +1,6 @@
 # wxproject_zhihu
 ![image](https://github.com/suedar/wxproject_zhihu/raw/master/gif/GIF.gif)
-以上为预览
+<br>以上为预览<br>
 ![image](https://github.com/suedar/wxproject_zhihu/raw/master/gif/3.gif)
 
 ![image](https://github.com/suedar/wxproject_zhihu/raw/master/gif/4.gif)
