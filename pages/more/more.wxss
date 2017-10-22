@@ -1,1 +1,200 @@
 /* pages/more/more.wxss */
+.container .bot{
+  height: 7.5vh;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  z-index: 2;
+  box-shadow: .1px -.1px 5px .1px #ccc; 
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-content: center;
+  /* border-top: .1px solid #ccc;    */
+}
+.container .dis{
+  display: none;
+  /* transition: all 1s linear; */
+}
+.container .bot view{
+  padding-top: 5rpx;
+  width: 20%;
+  height: 7.5vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .bot view image{
+  position: absolute;
+  top: 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .bot view view{
+  padding-top: 50rpx;
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #808080;
+}
+
+.container .align{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 2;
+}
+.topInput{
+  background-color: #1E90FF;
+  height: 8vh;
+  width: 100%;
+  line-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.topInput .have icon{
+  position: absolute;
+  left: 40rpx;
+  top: 20rpx;
+}
+.topInput .have{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #fff;
+  width: 95%;
+  height: 6vh;
+  border-radius: 5px;
+  line-height: 6vh;
+  margin: 1vh auto;
+  position: relative;
+  text-align: center;
+}
+.topInput .less{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topInput .less image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
+}
+.topInput .have input{
+  /* display: inline-block;       */
+  height: 1vh;
+  line-height: 1vh;
+  width: 70%;
+  font-size: 30rpx;
+  padding: 25rpx 0 25rpx 20rpx;
+  text-align: left;     
+}
+.topInput .have .bottom{
+  width: 25%;
+  height: 3vh;
+  line-height: 3vh;
+  border-left: 1px solid #f2f2f2;  
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.topInput .have image{
+  position: absolute;
+  right: 20rpx;
+  /* left: 25rpx; */
+  width: 50rpx;
+  height: 50rpx;
+}
+.topInput .have text{
+  height: 3vh; 
+  color: #808080;
+  font-size: 30rpx;
+  text-align: center;
+  padding-left: 90rpx;
+}
+.container{
+  background-color: #f2f2f2;
+}
+.container .content{
+  background-color: #f2f2f2;
+  padding-top: 8vh;
+   height: 100vh;   
+}
+.container .content .topCon{
+  margin-top: 2vh;
+  width: 100%;
+  height: 23vh;
+  background-color: #fff;
+  border-top: .2px solid #ccc;
+  border-bottom: .2px solid #ccc;
+  box-shadow: 0 .6px .6px .6px #ccc;  
+}
+.container .content .topCon .topAli{
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  height: 23vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .content .topCon .topAli .topMid{
+   padding: 10rpx 0; 
+
+}
+.container .content .topCon .topAli .topMid image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.container .content .topCon .topAli view:first-of-type{
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.container .content .topCon .topAli view:last-of-type{
+  font-size: 28rpx;
+  color: #808080;
+}
+.container .content .botCon{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2vh;
+  box-shadow: 0 .6px .6px .6px #ccc;    
+}
+.container .content .botCon view{
+  display: flex;
+  margin-left: 20rpx;
+  /* padding: 15rpx 0; */
+  height: 8vh;
+  align-items: center;
+  position: relative;
+}
+.container .content .botCon view image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .content .botCon view .weiCon{
+  width: 90%;
+  position: relative; 
+  margin-left: 20rpx;
+  /* right: 0; */
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.container .content .botCon view .weiCon switch{
+  position:  absolute;
+  right: 0;
+} 
+.container .content .botCon view .weiCon text{
+  font-size: 32rpx;
+}

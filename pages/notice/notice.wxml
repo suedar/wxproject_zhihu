@@ -1,2 +1,62 @@
 <!--pages/notice/notice.wxml-->
-<text>pages/notice/notice.wxml</text>
+<!-- <text>pages/notice/notice.wxml</text> -->
+<view class='container'>
+    <view class='top'>
+      <view class='wrapper'>
+        <view>消息</view>
+        <image src='/image/72.png'></image>
+      </view>
+  </view>
+  <view class='content'>
+    <view class='topCon'>
+      <view class='part'>
+      <view class='leftPart'>
+        <view class='image'>
+          <image src='/image/70.png'></image>        
+        </view>
+        <text>私信</text>
+      </view>      
+       <view class='rightIco'>></view> 
+      </view>
+    </view>
+    <view class='notice'>
+      <view class='notTop'>
+        <view class='topNot'>通知列表</view>
+        <view class='topImage'>
+          <image src='/image/73.png/'></image>
+          <image src='/image/74.png/'></image>
+        </view>
+      </view>
+      <view class='line'></view>
+      <view class='noticeCon'>
+        <image src='data:image/png;base64,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'></image>
+        <text>还没有收到通知</text>
+        <text>您获得的赞同、赞、感谢、评论；您关注的问题、专栏更新等动态会显示在这里</text>
+        <view>注册/登陆</view>
+      </view>
+    </view>      
+      
+  </view>
+  <view class='bot {{dis}}'>
+    <view bindtap='shou'>
+      <image src='/image/10.png'></image>
+      <view>首页</view>
+    </view>
+    <view bindtap='thought'>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view bindtap='market'>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view bindtap='notice'>
+      <image src='/image/23.png'></image>
+      <view>通知</view>
+    </view>
+    <view bindtap='more'>
+      <image src='/image/14.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+</view>

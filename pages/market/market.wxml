@@ -11,9 +11,95 @@
       </view>
     </view>
   </view>
-  <view class='content'></view>
+  <view class='content'>
+    <view class='lbt'>
+      <view class='ul'>
+        <view> <image src='/image/7.jpg'></image></view>
+        <view> <image src='/image/8.jpg'></image></view>
+        <view> <image src='/image/11.jpg'></image></view>
+        <!-- <view> <image src='/image/8.jpg'></image></view> -->
+      </view>
+    </view>
+    <view class='head'>
+      <view class='nuo'>
+      <view class='headCon'>
+        <view class='headConView headItem'>
+          <view>
+            <image src='/image/50.png'></image>
+            <text>Live</text>
+          </view>
+          <view>互动分享会</view>
+        </view>
+        <view class='headConView headItem'>
+          <view>
+            <image src='/image/51.png'></image>
+            <text>书店</text>
+          </view>
+          <view>精品电子书</view>
+        </view>
+        <view class='headConView'>
+          <view>
+            <image src='/image/52.png'></image>
+            <text>付费咨询</text>
+          </view>
+          <view>线上语音解答</view>
+        </view>
+      </view>
+      </view>
+      
+    </view>
+    <view class='newKnow'>
+      <view class='knowHead'>每日新知</view>
+      <view class='knowCon'>
+        <view class='knowItem'>
+          <image src='/image/55.png'></image>
+          <view>成长：恋人间恰当应对冲突的技巧</view>
+          <view>02:42</view>
+        </view>
+        <view class='knowItem'>
+          <image src='/image/55.png'></image>
+          <view>心理：克服自卑的五个技巧</view>
+          <view>02:33</view>
+        </view>
+        <view class='knowItem'>
+          <image src='/image/55.png'></image>
+          <view>希拉里：年轻人如何成为合格领导者</view>
+          <view>03:10</view>
+        </view>
+      </view>
+      <view class='knowWei'>
+        <view class='weiHead'>
+          <view></view>
+          <view>免费播放全部</view>
+        </view>
+        <view class='wei'>查看更多 ></view>
+      </view>
+    </view>      
+      <view class='pri'>
+        <view class='priHead'>
+          <image src='/image/60.png'></image>
+          <text>私家课</text>
+          <image src='/image/61.png'></image>          
+        </view>
+        <view class='priCon' wx:for="{{pri}}" wx:key="index">
+          <view class='conHead'>
+            <image src="/image/6.jpg"></image>
+          </view>
+          <view class='conMid'>
+            <view>{{item.head}}</view>
+            <view>{{item.con}}</view>
+            <view>{{item.money}}</view>
+          </view>
+          <view class='conWei'>
+            <image src='/image/55.png'></image>
+            <text>试听</text>
+          </view>
+        </view>
+        <view class='more'>查看更多</view>
+      </view>
+  </view>
     <view class='bot {{dis}}'>
-    <view>
+    <view bindtap='shou'>
       <image src='/image/10.png'></image>
       <view>首页</view>
     </view>
@@ -21,7 +107,7 @@
       <image src='/image/11.png'></image>
       <view>想法</view>      
     </view>
-    <view bindtap='market'>
+    <view >
       <image src='/image/22.png'></image>
       <view>市场</view>      
     </view>

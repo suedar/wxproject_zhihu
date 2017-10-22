@@ -6,7 +6,8 @@
     "pages/thought/thought",
     "pages/market/market",
     "pages/notice/notice",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/message/message"
     ],
   "window": {
     "navigationBarBackgroundColor": "#1E90FF",

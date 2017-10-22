@@ -1,2 +1,91 @@
 <!--pages/more/more.wxml-->
-<text>pages/more/more.wxml</text>
+<view class='container'>
+  <view class="align">
+    <view class='topInput'>
+      <view class='have'>
+        <icon type="search" size='14'></icon>
+        <input placeholder='搜索话题，问题或人'></input>
+        <image src='/image/75.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='topCon'>
+      <view class='topAli'>
+        <view>登陆知乎，体验更多功能</view>
+        <view class='topMid'>
+          <image src='/image/80.png'></image>
+          <image src='/image/81.png'></image>
+          <image src='/image/82.png'></image>
+          <image src='/image/83.png'></image>
+        </view>
+        <view>其他方式登陆</view>
+      </view>
+    </view>
+    <view class='botCon'>
+      <view>
+        <image src='/image/84.png'></image>
+        <view class='weiCon'>
+          <text>我的收藏</text>          
+        </view>
+      </view>
+      <view>
+        <image src='/image/85.png'></image>
+        <view class='weiCon'>
+          <text>我的关注</text>
+        </view>
+      </view>
+    </view>
+    <view class='botCon'>      
+      <view>
+        <image src='/image/86.png'></image>
+        <view class='weiCon'>
+          <text>我的书架</text>        
+        </view>
+      </view>
+      </view>
+    <view class='botCon'>      
+      <view>
+        <image src='/image/87.png'></image>
+        <view class='weiCon'>
+          <text>最近浏览</text>          
+        </view>
+      </view>
+      <view>
+        <image src='/image/88.png'></image>
+        <view class='weiCon'>
+          <text>夜间模式</text>        
+        <switch></switch>
+        </view>        
+      </view>
+      <view>
+        <image src='/image/89.png'></image>
+        <view class='weiCon'>
+          <text>设置</text>        
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='bot {{dis}}'>
+    <view bindtap='shou'>
+      <image src='/image/10.png'></image>
+      <view>首页</view>
+    </view>
+    <view bindtap='thought'>
+      <image src='/image/11.png'></image>
+      <view>想法</view>      
+    </view>
+    <view bindtap='market'>
+      <image src='/image/12.png'></image>
+      <view>市场</view>      
+    </view>
+    <view bindtap='notice'>
+      <image src='/image/13.png'></image>
+      <view>通知</view>
+    </view>
+    <view bindtap='more'>
+      <image src='/image/24.png'></image>
+      <view>更多</view>
+    </view>
+  </view>
+</view>

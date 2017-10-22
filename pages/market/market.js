@@ -6,7 +6,19 @@ Page({
    */
   data: {
     ex: 0,
-
+    pri:[{
+      head: '晋升有产阶层的12堂课',
+      con:"周勇 · 财富管理专家",
+      money:"￥69"
+    }, {
+      head: '国民必修课，魅力好声音',
+      con: "张皓翔 · 你的声音私教",
+      money: "￥69"
+      },{
+        head: '人人都用得上的艺术课',
+        con: "翁昕 · 艺术经纪人",
+        money: "￥69"
+      }]
   },
   thought:function () {
     wx.redirectTo({

@@ -47,8 +47,7 @@
         </view>
       </view>
       </view>
-    </view>
-    
+    </view>  
   </view>
   <view class='bot {{dis}}'>
     <view bindtap='shou'>

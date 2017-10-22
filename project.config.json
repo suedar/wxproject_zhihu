@@ -12,7 +12,7 @@
 	"projectname": "zhihu",
 	"condition": {
 		"weapp": {
-			"current": 3,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -37,6 +37,17 @@
 					"name": "market",
 					"pathName": "pages/market/market",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "notice",
+					"pathName": "pages/notice/notice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "more",
+					"pathName": "pages/more/more"
 				}
 			]
 		},

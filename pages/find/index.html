@@ -13,14 +13,15 @@
 
 <body>
     <!-- <img src="6.png" alt="" id="image"> -->
-    <canvas id="mycc" width="1000px" height="1000px"></canvas>
-    <img src="71.png" alt="">
+    <canvas id="mycc" width="990px" height="141px"></canvas>
+    <img src="../../image/6.png" alt="">
     <script>
         var my = document.getElementById('mycc');
         var img = document.getElementsByTagName('img')[0];
         var m = my.getContext('2d');
         img.onload = function() {
             m.drawImage(img, 0, 0);
+            // m.putImageData(e.data, 0, 0);
             var temp = my.toDataURL();
             console.log(temp);
         }
